@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- <button class="btn" onclick="return about.html" style='font-family:Arial, Helvetica, sans-serif;'>About</button> -->
+<div class="container">
+  <br>
+	<div class="row">
+    <div class="col-md-6 classy_frame" style="padding-top: 2%;">
+      <h3 style="text-transform: capitalize;font-family:Arial, Helvetica, sans-serif;font-weight: bold;font-size: 40px;"><img id="preview12" src="{{ url_for('static', filename = 'images/icon.png') }}" height="64px" width="64px" title = "icon pic" > HerbLens</h3>
+      <h4 style="text-transform: capitalize;font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size: 21px;">Indian herb recognition and Information retrieval </h4>
+      <img id="preview" src="{{ url_for('static', filename = 'images/plant.jpg') }}" height="300px" width="100%" title = "client pic">
+      
+      <center>
+        <br>
+        <div class="image-upload">
+          <p style="color:rgb(0, 0, 0);font-family:Arial, Helvetica, sans-serif;font: size 15px;" id="upload-web">Click below to upload a leaf image.</p style="color:rgb(255,255,255);">
+          <p style="color:rgb(0, 0, 0);font-family:Arial, Helvetica, sans-serif;" id="upload-mobile">Click the camera icon below to click a image.</p style="color:rgb(255,255,255);">
+          
+          <label for="file">
+              <img id="upload-web" src="{{ url_for('static', filename = 'images/upload.png') }}"/>
+              <img id="upload-mobile" src="{{ url_for('static', filename = 'images/camera.png') }}"/>
+
+          </label>
+          <input type="file" name="file" id="file" onchange="previewImage()">
+        </div>
+
+        <br>
+        <button class="classify-button" onclick="classifyPlant()" style="font-family:Arial, Helvetica, sans-serif;">Identify Leaf </button>
+      </center>
+      <br><br>
+    </div>
+
+    <div class="col-md-6 classy_frame" style="padding-top: 0%;" id="about">
+      <center><h3 style="text-transform: capitalize;font-family:Arial, Helvetica, sans-serif;font-weight:bold">About</h3></center>
+      <h4 style='font-family:Arial, Helvetica, sans-serif;'>Mother earth is enriched and nourished with a variety of plants. These plants are useful in many ways such as drug formulation, production of herbal products, and medicines to cure many common ailments and diseases. For the past 5000 years, Ayurveda, a traditional Indian medicinal system is widely accepted even today. India is a rich country for being the habitat for a variety of medicinal plants. Many parts of the plants such as leaves, bark, root, seeds, fruits, and many more are used as a vital ingredient for the production of herbal medicines. Herbal medicines are preferred in both developing and developed countries as an alternative to synthetic drugs mainly because of no side effects.
+        <br><br>
+        This application helps in recognition of these 30 different species by using the applications of image processing and computer vision techniques for the identification of the medicinal plants , and is contributed by CDAC KP Bangalore studends of EDBDA under the guidance of Ramesh Sir<br><br>
+        
+      </h4>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  var imgData;
+  var loading = document.getElementById("loading");
+  
+  function previewImage(){
+      
+    var file = document.getElementById("file").files;
+    if(file.length>0){
+      var fileName = file[0].name;
+      var allowed_extensions = new Array("jpeg", "jpg","png");
+      var file_extension = fileName.split('.').pop().toLowerCase(); 
+
+      if(allowed_extensions[0] == file_extension || allowed_extensions[1] == file_extension || allowed_extensions[2] == file_extension){
+        var imgObj = document.getElementById("preview");
+        var fileReader = new FileReader();
+
+        fileReader.onload = function(event){
+          document.getElementById("preview").setAttribute("src", event.target.result);
+          imgData = event.target.result;
+        };
+
+        fileReader.readAsDataURL(file[0]);
+      }
+      else{
+        document.getElementById("file").value = "";
+        document.getElementById("errorTitle").innerHTML = "Error - Only Image File Acceptable";
+        document.getElementById("errorMessage").innerHTML = "We only accept image with .jpeg .jpg or .png extensions.";
+        $("#errorPopup").modal("show");
+
+      }
+
+      
+    }
+  }
+
+  function classifyPlant(){
+    var file = document.getElementById("file").files;
+    if(file.length > 0){
+      loading.style.display = "block";
+
+      var form_data = new FormData();
+      form_data.append("file", document.getElementById("file").files[0]);
+      $.ajax({
+        url: 'classifyPlant', // point to server-side URL
+        dataType: 'json', // what to expect back from server
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function (data) {
+      
+          var predicted_value = data["predicted_value"];
+          var details = data["details"];
+
+          var about = document.getElementById("about");
+
+          about.innerHTML = "<center><h3 style='font-family:Arial, Helvetica, sans-serif;'>Leaf is of plant : <b style='background-color: #ffffff;'>" + predicted_value + "</b> </h3></center><h4>"+ details +"</h4>";
+
+          loading.style.display = "none";
+        }
+
+      });
+    }
+    else{
+      document.getElementById("errorTitle").innerHTML = "Error - Image not uploaded";
+      document.getElementById("errorMessage").innerHTML = "Please upload image of your plant Image.";
+      $("#errorPopup").modal("show");
+    }
+  }
+  
+</script>
+
+
+{% endblock %}
