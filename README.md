@@ -29,6 +29,15 @@ Data </br>
 |  |__ Img_2 </br>
 |  ... </br>
 
+.
+├── build                   # Compiled files (alternatively `dist`)
+├── docs                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── test                    # Automated tests (alternatively `spec` or `tests`)
+├── tools                   # Tools and utilities
+├── LICENSE
+└── README.md
+
 ## Approches :
 There are many approches to solve this problem,and few of them are studied and implemented in Herblens.
 Developing deep learning models using different learning algorithms such as :
