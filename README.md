@@ -10,24 +10,24 @@ The dataset used in this project https://data.mendeley.com/datasets/nnytj2v3n5/1
 The goal was to build an application which can identify/recognize the herb and display its scientific or botanical information and its medicinal properties and uses.
 The contribution of the medicinal plant leaf dataset to develop Artificial Intelligence models (machine learning and deep learning) will assist many researchers and computer scientists to detect, identify the species and its diseases and learn more about the herb existence and medicinal properties.
 
-Data
-|__ Herb_1
-|  |__ Img_1
-|  |__ Img_2
-|  ...
-|
-|__ Herb_2
-|  |__ Img_1
-|  |__ Img_2
-|  ...
-|
-... 
-...
-|
-|__ Herb_30
-|  |__ Img_1
-|  |__ Img_2
-|  ...
+Data </br>
+|__ Herb_1 </br>
+|  |__ Img_1 </br>
+|  |__ Img_2 </br>
+|  ... </br>
+| </br>
+|__ Herb_2 </br>
+|  |__ Img_1 </br>
+|  |__ Img_2 </br>
+|  ... </br>
+| </br>
+... </br>
+... </br>
+| </br>
+|__ Herb_30 </br>
+|  |__ Img_1 </br>
+|  |__ Img_2 </br>
+|  ... </br>
 
 ## Approches :
 There are many approches to solve this problem,and few of them are studied and implemented in Herblens.
