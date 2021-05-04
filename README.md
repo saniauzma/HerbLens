@@ -30,7 +30,7 @@ Data </br>
 |   ... </br>
 
 
-## Approches :
+## Approach :
 There are many approches to solve this problem,and few of them are studied and implemented in Herblens.
 Developing deep learning models using different learning algorithms such as :
 
