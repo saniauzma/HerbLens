@@ -91,7 +91,8 @@ https://github.com/E-DBDA/Project/blob/main/one_shot_siamese_uzma.ipynb
 ### All notebooks of the project build by all of the team members :
 https://github.com/E-DBDA/Project
 
-### To run the application check how to run text file : https://github.com/saniauzma/HerbLens/blob/main/How%20To%20Run.txt
+### To run the application check how to run text file : 
+https://github.com/saniauzma/HerbLens/blob/main/How%20To%20Run.txt
 
 
 
