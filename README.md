@@ -65,7 +65,7 @@ Siamese networks are a special type of neural network architecture. Instead of a
 The architecture
 A Siamese networks consists of two identical neural networks(cnn), each taking one of the two input images. The last layers of the two networks gives the vector encoding of two images and then used the euclidean distance function , which calculates the similarity between the two images.The architecture is given below.
 
-![image](https://user-images.githubusercontent.com/73434008/116974564-f26d5980-acdb-11eb-91d6-eaf95aa15ec8.png)
+![image](https://user-images.githubusercontent.com/73434008/116974662-1466dc00-acdc-11eb-85ce-c94e7e550514.png)
 
 
 
