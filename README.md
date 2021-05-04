@@ -83,7 +83,8 @@ https://github.com/E-DBDA/Project/blob/main/one_shot_siamese_uzma.ipynb
 ![image](https://user-images.githubusercontent.com/73434008/116972196-4a09c600-acd8-11eb-87ea-d4b0b4cfa936.png)
 
 ## Android app UI :
-![image](https://user-images.githubusercontent.com/73434008/116972501-b84e8880-acd8-11eb-8d15-793d15c616ad.png = 250x250)
+
+<img src="https://user-images.githubusercontent.com/73434008/116972501-b84e8880-acd8-11eb-8d15-793d15c616ad.png" width="48", height="70>
 
 
 
