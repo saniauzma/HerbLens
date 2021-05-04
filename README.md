@@ -79,10 +79,12 @@ https://github.com/E-DBDA/Project/blob/main/one_shot_siamese_uzma.ipynb
 
 ## The HerbLens Application :
 ## Web UI using flask:
-<a href="url"><img src="https://user-images.githubusercontent.com/73434008/116971979-0020e000-acd8-11eb-9ed9-c881265b15cd.png" align="left" height="600" width="1600" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/73434008/116971979-0020e000-acd8-11eb-9ed9-c881265b15cd.png" align="left" height="650" width="1600" ></a>
 
-<a href="url"><img src="https://user-images.githubusercontent.com/73434008/116972196-4a09c600-acd8-11eb-87ea-d4b0b4cfa936.png" align="left" height="600" width="1600" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/73434008/116972196-4a09c600-acd8-11eb-87ea-d4b0b4cfa936.png" align="left" height="650" width="1600" ></a>
 
+</br>
+</br>
 
 ## Android app UI :
 
