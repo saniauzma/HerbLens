@@ -25,7 +25,7 @@ Data </br>
 ... </br>
 | </br>
 |__ Herb_30 </br>
-|<p>|__ Img_1 </br></p>
+|   |__ Img_1 </br>
 |   |__ Img_2 </br>
 |   ... </br>
 
