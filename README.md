@@ -12,7 +12,7 @@ The contribution of the medicinal plant leaf dataset to develop Artificial Intel
 
 Data </br>
 |__ Herb_1 </br>
-| * |__ Img_1 </br>
+|  |__ Img_1 </br>
 |  |__ Img_2 </br>
 |  ... </br>
 | </br>
@@ -29,6 +29,23 @@ Data </br>
 |   |__ Img_2 </br>
 |   ... </br>
 
+var routes = (
+  <Route name="Data">
+    <Route name="Herb 1"/>
+      <Route name="Image 1"/>
+      <Route name="Image 2"/>
+      <Route name="..."/>
+  </Route>
+  
+  <Route name="Herb 2"/>
+      <Route name="Image 1"/>
+      <Route name="Image 2"/>
+      <Route name="..."/>
+  </Route>
+ </Route>
+  
+
+);
 
 ## Approches :
 There are many approches to solve this problem,and few of them are studied and implemented in Herblens.
