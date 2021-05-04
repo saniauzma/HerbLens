@@ -1,0 +1,26 @@
+1. open cmd and go to the project directory.
+2.create a new virtual environment using following command:
+
+$virtualenv myenv 
+
+if virtualenv is not installed in the system install it using :
+
+$pip install virtualenv
+
+3.activate the environment by:
+
+$.\myenv\Scripts\activate.ps1
+
+4.now in the myenv environment install required libraries by:
+
+$pip install -r requirements.txt 
+
+5.after installing all libraries run the app.py file:
+
+$py app.py
+
+it will give a local url as : http://127.0.0.1:5000/
+
+6. copy the url and open it in browser.
+
+now its running :) 
