@@ -12,10 +12,10 @@ The contribution of the medicinal plant leaf dataset to develop Artificial Intel
 
 Data </br>
 |__ Herb_1 </br>
-|  *|__ Img_1 </br>
-|  *|__ Img_2 </br>
-| * ... </br>
-| *</br>
+| * |__ Img_1 </br>
+|  |__ Img_2 </br>
+|  ... </br>
+| </br>
 |__ Herb_2 </br>
 |  |__ Img_1 </br>
 |  |__ Img_2 </br>
