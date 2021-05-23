@@ -40,7 +40,7 @@ Developing deep learning models using different learning algorithms such as :
 
 ## Implementation :
 
-### Tradistional CNN :
+### Traditional CNN :
 Build the cnn model by apply hyperparameter optimization :
 Here's the notebook : https://github.com/E-DBDA/Project/blob/main/cnn_hypertuning_uzma.ipynb
 
