@@ -48,7 +48,7 @@ Here's the notebook : https://github.com/E-DBDA/Project/blob/main/cnn_hypertunin
 #### Xception Model :
 Xception by Google, stands for Extreme version of Inception. With a modified depthwise separable convolution, it is even better than Inception-v3  (also by Google, 1st Runner Up in ILSVRC 2015) for both ImageNet ILSVRC and JFT datasets.
 
-Here's the motebook of Xception model : https://github.com/E-DBDA/Project/blob/main/Xception_uzma.ipynb
+Here's the notebook of Xception model : https://github.com/E-DBDA/Project/blob/main/Xception_uzma.ipynb
 5-fold cv on Xception model : https://github.com/E-DBDA/Project/blob/main/5Fold_cv_on_Xception_uzma.ipynb
 
 To know more about Xception model check this article : https://maelfabien.github.io/deeplearning/xception/
